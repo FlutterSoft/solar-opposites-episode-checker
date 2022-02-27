@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<img class="hidden" id="imgRick" src="./rick.png" alt="">
+		<header>
+			<div id="titleContainer"><h1>Solar Opposites</h1>
+			</div>			
+
+			<nav>
+				<img id="flower1" src="./flower.png" alt="">
+				<a href="#plotContainer">Plot</a>
+				<a href="#inputContainer">Find Episode</a>
+				<img id="flower2" src="./flower.png" alt="">
+			</nav>
+		</header>
+		<div id="bannerTogether" class="fade-in">
+			<img id="imgTogether" src="together.png" alt="">
+		</div>
+		<section id="plotContainer">
+			<div id="plotTitleContainer">
+				<h2>Plot</h2>
+			</div>
+			<section id="plotParagraph">
+				<p>A family of aliens move to middle America, where they debate whether life is better there or on their home planet.</p>
+			</section>
+		</section>
+
+		<section id="inputContainer">
+			<input id="inputSeason" placeholder="Season Number" type="text">
+			<input id="inputEpisode" placeholder="Episode Number" type="text" name="">
+			<button id="btnFindEpisode">Find Episode</button>
+		</section>
+
+		<section class="episodeContainer">
+			<div class="seasonContainer">
+				<h2>Season: <span id="seasonNumber" class="hidden"></span></h2>
+			</div>
+			<div class="seasonContainer">
+				<h3 id="episode">Episode: <span id="episodeName" class="fade-in hidden"> </span></h3>
+			</div>
+			<div class="seasonContainer">
+				<h2>Plot</h2>
+			</div>
+			<div class="seasonContainer">
+				<p id="episodePlot" class="fade-in hidden"><p>
+			</div>
+			<div class="seasonContainer">
+				<img id="imgEpisode" class="fade-in hidden" src="" alt="">
+			</div>
+		</section>
+		<footer>That's all, get outta here. </footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

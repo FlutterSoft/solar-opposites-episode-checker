@@ -1,0 +1,246 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/*Colours:
+     background-color: rgba(0, 0, 0, 1);   - black
+     color: rgba(0, 246, 153, 1)     - green
+     color: rgba(186, 238, 243,1 )-blue
+*/
+
+
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family: 'Rock Salt', cursive;
+     background-color: rgba(0, 0, 0, 1);
+     color: rgba(0, 246, 153, 1);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     height: 150px;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+#titleContainer {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     
+}
+
+nav {
+     width: 60%;
+     height: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+}
+
+a {
+     text-decoration: none;
+     color: rgba(186, 238, 243,1 );
+}
+a:hover{
+     color: rgb(96, 139, 143);
+     font-size: 120%;
+     transition: font-size 400ms;
+}
+
+a:not(:hover){
+     transition: font-size 400ms;
+}
+footer {
+     display: flex;
+     height: 100px;
+     margin-top: 40px;
+     justify-content: center;
+}
+
+#flower1, #flower2 {
+     height: 50px;
+     transition: height 400ms;
+}
+#flower1:hover, #flower2:hover{
+     height: 120%;
+     transition: height 400ms;
+
+}
+
+#plotContainer {
+     margin-top: 2%;
+     width: 100%;
+     height: 200px;
+
+     
+     /* flex-wrap: wrap; */
+}
+
+#plotTitleContainer {
+     display: flex;
+     justify-content: center;
+
+}
+
+#plotParagraph {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+#imgTogether {
+     height: 400px;
+}
+#bannerTogether {
+     display:flex;
+     justify-content: center;
+}
+
+.seasonContainer {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+#episodePlot {
+     color: rgb(124, 160, 102);
+
+}
+
+#episode {
+     color: rgb(124, 160, 102);
+}
+
+#imgEpisode {
+     height: 200px;
+}
+
+#inputContainer {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     text-align: center;
+}
+input {
+     text-align: center;
+     padding: 1%;
+     background-color: rgba(52,52,50,1);
+     border: solid 3px black;
+     color: rgba(0, 246, 153, 1);
+}
+
+#btnFindEpisode {
+     width: 100px;
+     text-align: center;
+     padding: 1%;
+     background-color: rgba(52,52,50,1);
+     border: solid 3px black;
+     color: rgba(0, 246, 153, 1);
+}
+#btnFindEpisode:hover {
+     background-color: rgb(29, 29, 28);
+     transition: background-color 400ms;
+}
+
+#btnFindEpisode:not(:hover){
+     transition: 400ms;
+
+}
+
+::placeholder {
+     font-size: 80;
+}
+
+ .hidden {
+     display: none;
+     transition: all 1000ms;
+} 
+#imgRick {
+     position:absolute;
+     height: 300%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.fade-in {
+     animation: fadeIn ease 2s;
+     -webkit-animation: fadeIn ease 2s;
+     -moz-animation: fadeIn ease 2s;
+     -o-animation: fadeIn ease 2s;
+     -ms-animation: fadeIn ease 2s;
+   }
+   @keyframes fadeIn {
+     0% {
+       opacity:0;
+     }
+     100% {
+       opacity:1;
+     }
+   }
+   
+   @-moz-keyframes fadeIn {
+     0% {
+       opacity:0;
+     }
+     100% {
+       opacity:1;
+     }
+   }
+   
+   @-webkit-keyframes fadeIn {
+     0% {
+       opacity:0;
+     }
+     100% {
+       opacity:1;
+     }
+   }
+   
+   @-o-keyframes fadeIn {
+     0% {
+       opacity:0;
+     }
+     100% {
+       opacity:1;
+     }
+   }
+   
+   @-ms-keyframes fadeIn {
+     0% {
+       opacity:0;
+     }
+     100% {
+       opacity:1;
+   }
