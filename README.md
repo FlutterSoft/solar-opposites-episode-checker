@@ -3,7 +3,7 @@ Cool little app that lets you select a season and episode of Solar Opposites and
 
 **Link to project:** https://solaropposites.netlify.app/
 
-![alt tag](https://d33wubrfki0l68.cloudfront.net/621b18b2aa67…69e740e85/screenshot_2022-02-27-06-22-44-0000.png)
+![Project Screenshot](https://d33wubrfki0l68.cloudfront.net/621b18b2aa679a069e740e85/screenshot_2022-02-27-06-22-44-0000.png)
 
 ## How It's Made:
 
